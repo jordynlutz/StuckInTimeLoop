@@ -1,0 +1,31 @@
+using System;
+
+
+namespace TimeLoopProjectJL
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // get a number from the user, between 1 and 100
+            int n = 0;
+            // Console.WriteLine("Type an integer between 1 and 100!!!");
+            n = Convert.ToInt16(Console.ReadLine());
+
+            // write 'abracadabra' from 1 to the nunmber requested
+            if (n < 1 || n > 100)
+            {
+                Console.WriteLine("Type an integer between 1 and 100!!!");
+            }
+            else
+            {
+                for (int i = 1; i <= n; i++)
+                {
+                    Console.WriteLine(i + " Abracadabra");
+                }
+            }
+
+
+        }
+    }
+}
